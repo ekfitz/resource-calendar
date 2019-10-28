@@ -1,0 +1,519 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: none;
+  background-color: #171717;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.smallmonth {
+  position: absolute;
+  width: 99%;
+  height: 6vh;
+}
+
+.monthtext {
+  position: absolute;
+  width: 100%;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  top: 1vh;
+}
+
+.smalltitle {
+  position: absolute;
+  width: 100%;
+  height: 6vh;
+  top: 7vh;
+  text-align: center;
+}
+
+.titletext {
+  position: absolute;
+  font-size: 0.85em;
+  color: white;
+  height: 3vh;
+  width: 100%;
+}
+
+.daytickbox {
+  position: absolute;
+  width: 100%;
+  height: 3vh;
+  top: 11.7vh;
+  background-color: #2C2C2C;
+}
+
+.ticks {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  border-left: solid #DBDBDB;
+  border-width: 0.05em;
+  opacity: 0.5;
+
+}
+
+.ticktext {
+  position: absolute;
+  font-size: 0.5em;
+  color: #DBDBDB;
+  margin-left: 15%;
+}
+
+.resourcearea {
+  position: absolute;
+  width: 20%;
+  height: 84vh;
+  top: 15vh;
+}
+
+.resourcebox {
+  position: absolute;
+  width: 100%;
+  height: 3.5%;
+  border-radius: 0.2em;
+  background-color: #3F3F3F;
+  cursor: pointer;
+}
+
+.resourcebox:hover {
+  background-color: #656565;
+}
+
+.resourcetitle {
+  position: absolute;
+  font-size: 0.7em;
+  color: #DBDBDB;
+  margin-top: 0.5em;
+  margin-left: 1%;
+}
+
+.resourcetext {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 0.5em;
+  color: #DBDBDB;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+.weekarea1 {
+  position: absolute;
+  width: 34%;
+  height: 84vh;
+  top: 15vh;
+  left: 23%;
+}
+
+.weekarea2 {
+  position: absolute;
+  width: 34%;
+  height: 84vh;
+  top: 15vh;
+  left: 58%;
+}
+
+.reservationbox {
+  position: absolute;
+  width: 100%;
+  height: 3.5%;
+  background-color: #262626;
+}
+
+.reservation {
+  position: absolute;
+  height: 100%;
+  background-color: purple;
+  border-radius: 0.3em;
+}
+
+.restext {
+  font-size: 0.65em;
+  color: white;
+  width: auto;
+}
+
+#titleText1 {
+  top: 0%;
+}
+
+#titleText2 {
+  top: 20%;
+}
+
+#tick1 {
+  left: 2%;
+}
+
+#tick2 {
+  left: 22%;
+}
+
+#tick3 {
+  left: 42%;
+}
+
+#tick4 {
+  left: 62%;
+}
+
+#tick5 {
+  left: 82%;
+}
+
+#tick6 {
+  left: 2%;
+}
+
+#tick7 {
+  left: 22%;
+}
+
+#tick8 {
+  left: 42%;
+}
+
+#tick9 {
+  left: 62%;
+}
+
+#tick10 {
+  left: 82%;
+}
+
+
+#dtBox1 {
+  width: 20%;
+}
+
+#dtBox2 {
+  width: 34%;
+  left: 23%;
+}
+
+#dtBox3 {
+  width: 34%;
+  left: 58%;
+}
+
+
+#rbox1 {
+  top: 0%;
+}
+
+#rbox2 {
+  top: 3.85%;
+}
+
+#rbox3 {
+  top: 7.7%;
+}
+
+#rbox4 {
+  top: 11.55%;
+}
+
+#rbox5 {
+  top: 15.4%;
+}
+
+#rbox6 {
+  top: 19.25%;
+}
+
+#rbox7 {
+  top: 23.1%;
+}
+
+#rbox8 {
+  top: 26.95%;
+}
+
+#rbox9 {
+  top: 30.8%;
+}
+
+#rbox10 {
+  top: 34.65%;
+}
+
+#rbox11 {
+  top: 38.5%;
+}
+
+#rbox12 {
+  top: 42.35%;
+  background-color: #2C2C2C;
+}
+
+#rbox13 {
+  top: 46.20%;
+}
+
+#rbox14 {
+  top: 50.05%;
+}
+
+#rbox15 {
+  top: 53.9%;
+}
+
+#rbox16 {
+  top: 57.75%;
+}
+
+#rbox17 {
+  top: 61.6%;
+}
+
+#rbox18 {
+  top: 65.45%;
+}
+
+#rbox19 {
+  top: 69.3%;
+}
+
+#rbox20 {
+  top: 73.15%;
+}
+
+#rbox21 {
+  top: 77%;
+}
+
+#rbox22 {
+  top: 80.85%;
+}
+
+#rbox23 {
+  top: 84.7%;
+}
+
+#rbox24 {
+  top: 88.55%;
+}
+
+#rbox25 {
+  top: 92.4%;
+}
+
+#rbox26 {
+  top: 96.25%;
+}
+
+#fwb1 {
+  top: 0%;
+}
+
+#fwb2 {
+  top: 3.85%;
+}
+
+#fwb3 {
+  top: 7.7%;
+}
+
+#fwb4 {
+  top: 11.55%;
+}
+
+#fwb5 {
+  top: 15.4%;
+}
+
+#fwb6 {
+  top: 19.25%;
+}
+
+#fwb7 {
+  top: 23.1%;
+}
+
+#fwb8 {
+  top: 26.95%;
+}
+
+#fwb9 {
+  top: 30.8%;
+}
+
+#fwb10 {
+  top: 34.65%;
+}
+
+#fwb11 {
+  top: 38.5%;
+}
+
+#fwb12 {
+  top: 42.35%;
+  background-color: #171717;
+}
+
+#fwb13 {
+  top: 46.20%;
+}
+
+#fwb14 {
+  top: 50.05%;
+}
+
+#fwb15 {
+  top: 53.9%;
+}
+
+#fwb16 {
+  top: 57.75%;
+}
+
+#fwb17 {
+  top: 61.6%;
+}
+
+#fwb18 {
+  top: 65.45%;
+}
+
+#fwb19 {
+  top: 69.3%;
+}
+
+#fwb20 {
+  top: 73.15%;
+}
+
+#fwb21 {
+  top: 77%;
+}
+
+#fwb22 {
+  top: 80.85%;
+}
+
+#fwb23 {
+  top: 84.7%;
+}
+
+#fwb24 {
+  top: 88.55%;
+}
+
+#fwb25 {
+  top: 92.4%;
+}
+
+#fwb26 {
+  top: 96.25%;
+}
+
+#swb1 {
+  top: 0%;
+}
+
+#swb2 {
+  top: 3.85%;
+}
+
+#swb3 {
+  top: 7.7%;
+}
+
+#swb4 {
+  top: 11.55%;
+}
+
+#swb5 {
+  top: 15.4%;
+}
+
+#swb6 {
+  top: 19.25%;
+}
+
+#swb7 {
+  top: 23.1%;
+}
+
+#swb8 {
+  top: 26.95%;
+}
+
+#swb9 {
+  top: 30.8%;
+}
+
+#swb10 {
+  top: 34.65%;
+}
+
+#swb11 {
+  top: 38.5%;
+}
+
+#swb12 {
+  top: 42.35%;
+  background-color: #171717;
+}
+
+#swb13 {
+  top: 46.20%;
+}
+
+#swb14 {
+  top: 50.05%;
+}
+
+#swb15 {
+  top: 53.9%;
+}
+
+#swb16 {
+  top: 57.75%;
+}
+
+#swb17 {
+  top: 61.6%;
+}
+
+#swb18 {
+  top: 65.45%;
+}
+
+#swb19 {
+  top: 69.3%;
+}
+
+#swb20 {
+  top: 73.15%;
+}
+
+#swb21 {
+  top: 77%;
+}
+
+#swb22 {
+  top: 80.85%;
+}
+
+#swb23 {
+  top: 84.7%;
+}
+
+#swb24 {
+  top: 88.55%;
+}
+
+#swb25 {
+  top: 92.4%;
+}
+
+#swb26 {
+  top: 96.25%;
+}

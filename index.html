@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resource Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/calendar.js"></script>
+  <script src="js/reservations.js"></script>
+</head>
+<body>
+
+  <div class="smallmonth">
+    <span class="monthtext" id="monthText"></span>
+  </div>
+
+  <div class="smalltitle" id="titlebox">
+    <div class="titletext" id="titleText1"></div>
+    <div class="titletext" id="titleText2"></div>
+
+  </div>
+
+  <div class="daytickbox" id="dtBox1">
+    <span class="resourcetitle" id="vehiclesTitle"></span>
+  </div>
+
+  <div class="daytickbox" id="dtBox2">
+    <div class="ticks" id="tick1">
+      <span class="ticktext" id="ticktext1"></span>
+    </div>
+
+    <div class="ticks" id="tick2">
+      <span class="ticktext" id="ticktext2"></span>
+    </div>
+
+    <div class="ticks" id="tick3">
+      <span class="ticktext" id="ticktext3"></span>
+    </div>
+
+    <div class="ticks" id="tick4">
+      <span class="ticktext" id="ticktext4"></span>
+    </div>
+
+    <div class="ticks" id="tick5">
+      <span class="ticktext" id="ticktext5"></span>
+    </div>
+
+  </div>
+
+  <div class="daytickbox" id="dtBox3">
+    <div class="ticks" id="tick6">
+      <span class="ticktext" id="ticktext6"></span>
+    </div>
+
+    <div class="ticks" id="tick7">
+      <span class="ticktext" id="ticktext7"></span>
+    </div>
+
+    <div class="ticks" id="tick8">
+      <span class="ticktext" id="ticktext8"></span>
+    </div>
+
+    <div class="ticks" id="tick9">
+      <span class="ticktext" id="ticktext9"></span>
+    </div>
+
+    <div class="ticks" id="tick10">
+      <span class="ticktext" id="ticktext10"></span>
+    </div>
+
+  </div>
+
+
+  <!-- RESOURCE AREA -->
+  <div class="resourcearea">
+
+    <div class="resourcebox" id="rbox1">
+      <span class="resourcetext" id="rtext1"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox2">
+      <span class="resourcetext" id="rtext2"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox3">
+      <span class="resourcetext" id="rtext3"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox4">
+      <span class="resourcetext" id="rtext4"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox5">
+      <span class="resourcetext" id="rtext5"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox6">
+      <span class="resourcetext" id="rtext6"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox7">
+      <span class="resourcetext" id="rtext7"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox8">
+      <span class="resourcetext" id="rtext8"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox9">
+      <span class="resourcetext" id="rtext9"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox10">
+      <span class="resourcetext" id="rtext10"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox11">
+      <span class="resourcetext" id="rtext11"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox12">
+      <span class="resourcetitle" id="rtext12"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox13">
+      <span class="resourcetext" id="rtext13"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox14">
+      <span class="resourcetext" id="rtext14"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox15">
+      <span class="resourcetext" id="rtext15"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox16">
+      <span class="resourcetext" id="rtext16"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox17">
+      <span class="resourcetext" id="rtext17"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox18">
+      <span class="resourcetext" id="rtext18"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox19">
+      <span class="resourcetext" id="rtext19"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox20">
+      <span class="resourcetext" id="rtext20"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox21">
+      <span class="resourcetext" id="rtext21"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox22">
+      <span class="resourcetext" id="rtext22"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox23">
+      <span class="resourcetext" id="rtext23"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox24">
+      <span class="resourcetext" id="rtext24"></span>
+    </div>
+
+    <div class="resourcebox" id="rbox25">
+      <span class="resourcetext" id="rtext25"></span>
+    </div>
+
+
+
+
+  </div>
+
+  <!--------------- WEEK AREA ----------->
+  <!------------------------------  WEEK 1 -->
+
+  <div class="weekarea1" id="wa1">
+    <div class="reservationbox" id="fwb1">
+      <div class="reservation" id="fwres1">
+        <span class="restext" id="fwrestext1"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb2">
+      <div class="reservation" id="fwres2">
+        <span class="restext" id="fwrestext2"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb3">
+      <div class="reservation" id="fwres3">
+        <span class="restext" id="fwrestext3"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb4">
+      <div class="reservation" id="fwres4">
+        <span class="restext" id="fwrestext4"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb5">
+      <div class="reservation" id="fwres5">
+        <span class="restext" id="fwrestext5"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb6">
+      <div class="reservation" id="fwres6">
+        <span class="restext" id="fwrestext6"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb7">
+      <div class="reservation" id="fwres7">
+        <span class="restext" id="fwrestext7"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb8">
+      <div class="reservation" id="fwres8">
+        <span class="restext" id="fwrestext8"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb9">
+      <div class="reservation" id="fwres9">
+        <span class="restext" id="fwrestext9"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb10">
+      <div class="reservation" id="fwres10">
+        <span class="restext" id="fwrestext10"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb11">
+      <div class="reservation" id="fwres11">
+        <span class="restext" id="fwrestext11"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb12">
+      <div class="reservation" id="fwres12">
+        <span class="restext" id="fwrestext12"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb13">
+      <div class="reservation" id="fwres13">
+        <span class="restext" id="fwrestext13"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb14">
+      <div class="reservation" id="fwres14">
+        <span class="restext" id="fwrestext14"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb15">
+      <div class="reservation" id="fwres15">
+        <span class="restext" id="fwrestext15"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb16">
+      <div class="reservation" id="fwres16">
+        <span class="restext" id="fwrestext16"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb17">
+      <div class="reservation" id="fwres17">
+        <span class="restext" id="fwrestext17"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb18">
+      <div class="reservation" id="fwres18">
+        <span class="restext" id="fwrestext18"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb19">
+      <div class="reservation" id="fwres19">
+        <span class="restext" id="fwrestext19"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb20">
+      <div class="reservation" id="fwres20">
+        <span class="restext" id="fwrestext20"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb21">
+      <div class="reservation" id="fwres21">
+        <span class="restext" id="fwrestext21"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb22">
+      <div class="reservation" id="fwres22">
+        <span class="restext" id="fwrestext22"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb23">
+      <div class="reservation" id="fwres23">
+        <span class="restext" id="fwrestext23"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb24">
+      <div class="reservation" id="fwres24">
+        <span class="restext" id="fwrestext24"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="fwb25">
+      <div class="reservation" id="fwres25">
+        <span class="restext" id="fwrestext25"></span>
+      </div>
+    </div>
+
+
+  </div>
+
+<!------------------------------  WEEK 2 -->
+  <div class="weekarea2" id="wa2">
+
+    <div class="reservationbox" id="swb1">
+      <div class="reservation" id="swres1">
+        <span class="restext" id="swrestext1"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb2">
+      <div class="reservation" id="swres2">
+        <span class="restext" id="swrestext2"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb3">
+      <div class="reservation" id="swres3">
+        <span class="restext" id="swrestext3"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb4">
+      <div class="reservation" id="swres4">
+        <span class="restext" id="swrestext4"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb5">
+      <div class="reservation" id="swres5">
+        <span class="restext" id="swrestext5"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb6">
+      <div class="reservation" id="swres6">
+        <span class="restext" id="swrestext6"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb7">
+      <div class="reservation" id="swres7">
+        <span class="restext" id="swrestext7"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb8">
+      <div class="reservation" id="swres8">
+        <span class="restext" id="swrestext8"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb9">
+      <div class="reservation" id="swres9">
+        <span class="restext" id="swrestext9"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb10">
+      <div class="reservation" id="swres10">
+        <span class="restext" id="swrestext10"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb11">
+      <div class="reservation" id="swres11">
+        <span class="restext" id="swrestext11"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb12">
+      <div class="reservation" id="swres12">
+        <span class="restext" id="swrestext12"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb13">
+      <div class="reservation" id="swres13">
+        <span class="restext" id="swrestext13"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb14">
+      <div class="reservation" id="swres14">
+        <span class="restext" id="swrestext14"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb15">
+      <div class="reservation" id="swres15">
+        <span class="restext" id="swrestext15"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb16">
+      <div class="reservation" id="swres16">
+        <span class="restext" id="swrestext16"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb17">
+      <div class="reservation" id="swres17">
+        <span class="restext" id="swrestext17"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb18">
+      <div class="reservation" id="swres18">
+        <span class="restext" id="swrestext18"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb19">
+      <div class="reservation" id="swres19">
+        <span class="restext" id="swrestext19"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb20">
+      <div class="reservation" id="swres20">
+        <span class="restext" id="swrestext20"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb21">
+      <div class="reservation" id="swres21">
+        <span class="restext" id="swrestext21"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb22">
+      <div class="reservation" id="swres22">
+        <span class="restext" id="swrestext22"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb23">
+      <div class="reservation" id="swres23">
+        <span class="restext" id="swrestext23"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb24">
+      <div class="reservation" id="swres24">
+        <span class="restext" id="swrestext24"></span>
+      </div>
+    </div>
+
+    <div class="reservationbox" id="swb25">
+      <div class="reservation" id="swres25">
+        <span class="restext" id="swrestext25"></span>
+      </div>
+    </div>
+
+  </div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
